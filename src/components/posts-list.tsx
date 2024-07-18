@@ -9,7 +9,7 @@ export default async function PostsList(){
         <ul>
         {posts.map((post: any) => (
           <li key={post.id} className="mb-3">
-            <Link href={`/posts/${post.id}`}>{post.title}</Link>
+            <Link href={`/posts/${post.id}`} className="text-blue-500 underline-offset-2">{post.title}</Link>
           </li>
         ))}
       </ul>
